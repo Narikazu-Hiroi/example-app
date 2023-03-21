@@ -10,5 +10,6 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: execute echo command
         run: echo "Hello World!"

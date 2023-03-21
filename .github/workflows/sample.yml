@@ -10,6 +10,7 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - name: execute echo command
+        uses: actions/checkout@v3
+        with: node-version: "16"
         run: echo "Hello World!"
